@@ -5,6 +5,7 @@ CodeMirror.defineMode("javascript", function(config, parserConfig) {
   var statementIndent = parserConfig.statementIndent;
   var jsonMode = parserConfig.json;
   var isTS = parserConfig.typescript;
+  var isJSX = parserConfig.jsx;
 
   // Tokenizer
 
@@ -628,3 +629,4 @@ CodeMirror.defineMIME("application/json", {name: "javascript", json: true});
 CodeMirror.defineMIME("application/x-json", {name: "javascript", json: true});
 CodeMirror.defineMIME("text/typescript", { name: "javascript", typescript: true });
 CodeMirror.defineMIME("application/typescript", { name: "javascript", typescript: true });
+CodeMirror.defineMIME("text/jsx", { name: "javascript", jsx: true });
